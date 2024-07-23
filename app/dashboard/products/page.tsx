@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 
-const DashboardPage = () => {
+const ProductsPage = () => {
 	return (
 		<main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
 			<div className="flex items-center">
-				<h1 className="text-lg font-semibold md:text-2xl">Dashboard</h1>
+				<h1 className="text-lg font-semibold md:text-2xl">Products</h1>
 			</div>
 			<div
 				className="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm"
@@ -13,11 +13,15 @@ const DashboardPage = () => {
 			>
 				<div className="flex flex-col items-center gap-1 text-center">
 					<h3 className="text-2xl font-bold tracking-tight">
-						Summary of the order, customers, and some analytics will be shown here.
+						You have no products yet
 					</h3>
+					
+					<Button className="mt-2">
+						Add New Product
+					</Button>
 				</div>
 			</div>
 		</main>
 	);
 };
-export default DashboardPage;
+export default ProductsPage;
